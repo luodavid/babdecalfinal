@@ -18,11 +18,11 @@ const exchangeContract = web3.eth.contract(exchangeABI).at(exchangeAddress);
 // }
 
 var disp = {
-    "your_address": web3.eth.accounts[0],
-    "supply_address": exchangeAddress,
+    "userAddress": web3.eth.accounts[0],
+    "exchangeAddress": exchangeAddress,
     "contract": exchangeContract,
 }
 
 alert(disp)
 
-export {exchangeContract, disp};
+export {exchangeContract};

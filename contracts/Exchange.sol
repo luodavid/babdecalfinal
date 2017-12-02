@@ -34,10 +34,16 @@ contract Exchange {
 		return false;
   	}
 
-	function Exchange(uint fee){
+	function Exchange(){
 		owner = msg.sender;
-		passportFee = fee;
+		passportFee = 1 ether;
 		registry = new Registry();
+	}
+
+	function changeFee(uint fee) 
+		onlyOwner()
+	{
+		passportFee = fee;
 	}
 
 	 function addEmbassy(string embassyName, address embassyAddress)
