@@ -69,19 +69,18 @@ class Dashboard extends Component {
                     <Col>
                         <Card>
                             <CardHeader>
-                                Embassy
+                                Embassy Options
                                 <div className="float-right">
-                                    
-                                    <Button onClick={this.handleClick} color="success">
-                                      Add New Passport
+                                  <NavLink to="/register">
+                                    <Button color="success">
+                                      Add/Check Passport
                                     </Button>
+                                  </NavLink>
                                     
                                 </div>
+
                             </CardHeader>
-                            <CardBlock>
-                                <Application/>
-                               
-                            </CardBlock>
+
                             </Card>
                         </Col>
                       </Row>
